@@ -89,9 +89,7 @@
 
 export const runtime = 'edge';
 
-export async function POST(req: Request) {
-  const { name, email, message } = await req.json();
-
+export async function sendContactEmail({ name, email, message }: { name: string; email: string; message: string }) {
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
@@ -107,8 +105,8 @@ export async function POST(req: Request) {
   });
 
   if (!response.ok) {
-    return new Response("Failed to send email", { status: 500 });
+    return { success: false, message: "Failed to send email" };
   }
 
-  return new Response(JSON.stringify({ success: true }), { status: 200 });
+  return { success: true, message: "Email sent successfully" };
 }
