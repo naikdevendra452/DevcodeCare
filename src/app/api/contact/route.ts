@@ -1,9 +1,11 @@
+export const runtime = 'edge';
+
 import { NextRequest, NextResponse } from 'next/server';
 import { validateContactForm } from '@/lib/validation';
 import { checkRateLimit, getClientIP } from '@/lib/rate-limit';
 import { sendContactEmail } from '@/lib/email';
 
-export const runtime = 'edge';
+
 
 export async function POST(request: NextRequest) {
   try {
