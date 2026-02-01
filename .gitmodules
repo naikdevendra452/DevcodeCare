@@ -1,0 +1,3 @@
+[submodule "DevcodeCare"]
+	path = DevcodeCare
+	url = https://github.com/naikdevendra452/DevcodeCare.git
