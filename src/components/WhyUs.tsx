@@ -24,9 +24,9 @@ const cards: Card[] = [
   },
   {
     icon: 'bi-phone',
-    title: 'Mobile App Development',
+    title: 'Android App Development',
     description:
-      'Native and cross-platform mobile apps focused on performance, great UX, and seamless integration with your backend systems.',
+      'Native Android apps focused on performance, intuitive UX, and seamless integration with your backend systems.',
     delay: 200,
   },
   {
@@ -107,8 +107,10 @@ export default function WhyUs() {
         <header className="section-header">
           <h3>Why choose us?</h3>
           <p>
-            We deliver end-to-end digital solutions — web & mobile development,
-            dependable technical support, and scalable cloud architectures.
+            We are a full-service provider specializing in Web Development,
+            Android App Development, DevOps & Cloud, and Technical Support —
+            delivering end-to-end solutions from design and development to
+            deployment and ongoing support.
           </p>
         </header>
 
